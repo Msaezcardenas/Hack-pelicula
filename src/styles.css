@@ -7,9 +7,6 @@
 body {
     background:#151516;
 }
-.card{
-    height: 530px
-}
 #nav-bar{ 
 width: 100%;
 height: 120px;
@@ -19,6 +16,7 @@ background: #000000;
     color: #EE0466;
 }
 .card{
+    height: 530px;
     border: 50px;
     background-color: rgba(0, 0, 0, 0.226)
 }
@@ -28,7 +26,7 @@ textarea.materialize-textarea {
     border-bottom: 1px solid #9e9e9e;
     border-radius: 0;
 }
-#second-page{
+#second-page, #search-input{
     display: none
 }
 #title-page-initial, #paragraph-initial {
@@ -51,6 +49,7 @@ margin-bottom: 25px;
 }
 #select-btn{
 padding: 0px 12px;
+
 }
 .btn1, .btn2{
 background-color: #C4C4C4;;
