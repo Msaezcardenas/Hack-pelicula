@@ -168,7 +168,7 @@ function printCards () {
       let imageFilms= data.results;
       for (let i = 0; i <imageFilms.length; i++){
         let titleFilms= imageFilms[i].title
-        let promise = [(fetch ("http://www.omdbapi.com/?t="+titleFilms+"&language=es-MX&y=2019&apikey=8f0dd609")
+        let promise = [(fetch ("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?t="+titleFilms+"&language=es-MX&y=2019&apikey=8f0dd609")
            .then (data=>data.json())
            .then (data =>{    
 //{"Response":"False","Error":"Movie not found!"}
@@ -257,7 +257,7 @@ document.getElementById("search-input").addEventListener("keydown",(evento)=>{
   if(evento.keyCode === 13){
      //console.log("hola")
      let titleSearch = document.getElementById("search-input").value;
-fetch("http://www.omdbapi.com/?s="+titleSearch+"&language=es-VE&apikey=8f0dd609")
+fetch("https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?s="+titleSearch+"&language=es-VE&apikey=8f0dd609")
  .then(data=>data.json())
  .then(data=>{
    let dataDocumentJson = data.Search;
