@@ -12,13 +12,14 @@ width: 100%;
 height: 120px;
 background: #000000;
 }
-.brand-logo{
+.brand-logo, .enter{
     color: #EE0466;
 }
 .card{
     height: 530px;
     border: 50px;
-    background-color: rgba(0, 0, 0, 0.226)
+    background-color: rgba(0, 0, 0, 0.226);
+    color: #ffff;
 }
 textarea.materialize-textarea {
     background-color: #f44336;
@@ -105,6 +106,7 @@ height: auto;
     font-size: 60px;
 }
 .tamaño{
-    margin: 1rem;
-    width: 15rem;
+    margin: 2rem;
+    width: 18rem;
+    margin-left: 10rem;
 }
