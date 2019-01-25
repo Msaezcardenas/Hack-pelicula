@@ -110,3 +110,8 @@ height: auto;
     width: 18rem;
     margin-left: 10rem;
 }
+.waves-effect:focus, .waves-light:focus, .btn-small:focus, .btn1:focus{
+
+    background: #f44336 !important;
+
+}
