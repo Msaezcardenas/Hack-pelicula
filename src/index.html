@@ -1,134 +1,111 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>titulo</title>
-   <!--Let browser know website is optimized for mobile-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <!--Import Google Icon Font-->
-   <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>-->
-
-   <link href="https://fonts.googleapis.com/icon?family=Lato:400,700" rel="stylesheet">
-   <link rel="stylesheet" href="styles.css" />
-
-</head>
-
-<body>
-      
-   <nav id="nav-bar">
-      <div class="nav-wrapper">
-      
-         <a href="#"><img class="responsive-img tamaño" src="img/logo2.png" alt=""></a>
-         <a href="#" class="brand-logo" id="nombre-pagina"> </a>
-         <a href="#" data-target="menu-responsive" class="sidenav-trigger"></a>
-         <ul class="right hide-on-med-and-down">
-            <li><a href="#" id="program-btn"><i class="material-icons">search</i></a></li>
-            <li><a href="#" id="initial-btn"><i class="material-icons">play_circle_outline</i></a></li>
-            <li><a href="#"><i class="material-icons">person_outline</i></a></li>
-            <li><input type="text" id="search-input" placeholder="Buscar.."></li>
-         </ul>
-      </div>
-   </nav>
-
-   <div class="container">
-
-      <div id="first-page">
-         <h1 id="title-page-initial">¿NO SABES QUÉ VER?</h1>
-         <p id="paragraph-initial">No te preocupes, nosotros podemos recomendarte algo interesante; solo respóndenos
-            las siguientes preguntas:</p>
-         <hr>
-
-         <div class="pregunta1"><p>Con cuál de los siguientes estados te idéntificas el día de hoy:</p>
-         <a class="waves-effect waves-light btn-small btn1">Triste</a>
-         <a class="waves-effect waves-light btn-small btn1">Estresado/a</a>
-         <a class="waves-effect waves-light btn-small btn1">Feliz</a>
-         <a class="waves-effect waves-light btn-small btn1">Inseguro/a</a>
-         <a class="waves-effect waves-light btn-small btn1">Enamorado/a</a>
-         <a class="waves-effect waves-light btn-small btn1">Molesto/a</a>
-         <a class="waves-effect waves-light btn-small btn1">Inspirado/a</a>
-         <a class="waves-effect waves-light btn-small btn1">Tranquilo/a</a>
-      </div>
-
-      <div class="pregunta2"> <p>¿Con cuánto tiempo dispones aproximadamete?</p>
-         <a class="waves-effect waves-light btn-small btn1">30m</a>
-         <a class="waves-effect waves-light btn-small btn1">1h 30m</a>
-         <a class="waves-effect waves-light btn-small btn1">2h</a>
-         <a class="waves-effect waves-light btn-small btn1">2h 30m</a>
-         <a class="waves-effect waves-light btn-small btn1">3h o más</a>
-      </div>
-
-
-
-
-         <div id="select-btn" class="col s12 m4">
-             <div class="pregunta3">   <p>Estas en compañía de...</p>
-            <a id="28" class="waves-effect waves-light btn-small btn2">Amigos</a>
-            <a id="10751" class="waves-effect waves-light btn-small btn2">Familia</a>
-            <a id="10749" class="waves-effect waves-light btn-small btn2">Pareja</a>
-            <a id="27" class="waves-effect waves-light btn-small btn2">Conquista</a>
-            <a id="10770" class="waves-effect waves-light btn-small btn2">Solitario/a</a>
+<html lang="es">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>titulo</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Import Google Icon Font-->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>-->
+      <link href="https://fonts.googleapis.com/icon?family=Lato:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <nav id="nav-bar">
+         <div class="nav-wrapper">
+            <a href="#"><img class="responsive-img tamaño" src="img/logo2.png" alt=""></a>
+            <a href="#" class="brand-logo" id="nombre-pagina"> </a>
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger"></a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="#" id="program-btn"><i class="material-icons">search</i></a></li>
+               <li><a href="#" id="initial-btn"><i class="material-icons">play_circle_outline</i></a></li>
+               <li><a href="#"><i class="material-icons">person_outline</i></a></li>
+               <li><input type="text" id="search-input" placeholder="Buscar.."></li>
+            </ul>
          </div>
-      </div>
-
-         <div id="root1" class="row"></div>
-      </div>
-
-   </div>
-
-   <!--2ºPantalla-->
-   <div id="second-page">
-
-      <!--Select-->
-      <div id="container2" class="container">
-         <div class="row">
-            <div id="select-films" class="col s12 m4">
-               <select id="select-type-films">
-                  <option value="">Elige tu género</option>
-                  <option value="28">Acción</option>
-                  <option value="12">Aventura</option>
-                  <option value="16">Animación</option>
-                  <option value="35">Comedia</option>
-                  <option value="80">Crimen</option>
-                  <option value="18">Drama</option>
-                  <option value="10751">Familia</option>
-                  <option value="14">Fantasia</option>
-                  <option value="36">Historia</option>
-                  <option value="27">Horror</option>
-                  <option value="10402">Música</option>
-                  <option value="9648">Misterio</option>
-                  <option value="10749">Romance</option>
-                  <option value="878">Ciencia Ficción</option>
-                  <option value="10770">P. televisión</option>
-                  <option value="53">Suspenso</option>
-                  <option value="37">Occidentales</option>
-               </select>
+      </nav>
+      <div class="container">
+         <div id="first-page">
+            <h1 id="title-page-initial">¿NO SABES QUÉ VER?</h1>
+            <p id="paragraph-initial">No te preocupes, nosotros podemos recomendarte algo interesante; solo respóndenos
+               las siguientes preguntas:
+            </p>
+            <hr>
+            <div class="pregunta1">
+               <p>Con cuál de los siguientes estados te idéntificas el día de hoy:</p>
+               <a class="waves-effect waves-light btn-small btn1">Triste</a>
+               <a class="waves-effect waves-light btn-small btn1">Estresado/a</a>
+               <a class="waves-effect waves-light btn-small btn1">Feliz</a>
+               <a class="waves-effect waves-light btn-small btn1">Inseguro/a</a>
+               <a class="waves-effect waves-light btn-small btn1">Enamorado/a</a>
+               <a class="waves-effect waves-light btn-small btn1">Molesto/a</a>
+               <a class="waves-effect waves-light btn-small btn1">Inspirado/a</a>
+               <a class="waves-effect waves-light btn-small btn1">Tranquilo/a</a>
+            </div>
+            <div class="pregunta2">
+               <p>¿Con cuánto tiempo dispones aproximadamete?</p>
+               <a class="waves-effect waves-light btn-small btn1">30m</a>
+               <a class="waves-effect waves-light btn-small btn1">1h 30m</a>
+               <a class="waves-effect waves-light btn-small btn1">2h</a>
+               <a class="waves-effect waves-light btn-small btn1">2h 30m</a>
+               <a class="waves-effect waves-light btn-small btn1">3h o más</a>
+            </div>
+            <div id="select-btn" class="col s12 m4">
+               <div class="pregunta3">
+                  <p>Estas en compañía de...</p>
+                  <a id="28" class="waves-effect waves-light btn-small btn2">Amigos</a>
+                  <a id="10751" class="waves-effect waves-light btn-small btn2">Familia</a>
+                  <a id="10749" class="waves-effect waves-light btn-small btn2">Pareja</a>
+                  <a id="27" class="waves-effect waves-light btn-small btn2">Conquista</a>
+                  <a id="10770" class="waves-effect waves-light btn-small btn2">Solitario/a</a>
+               </div>
             </div>
          </div>
-      </div>
-      <div class="container">
-         <div class="row">
-            <div id="root"></div>
+         
+         <div id="root1" class="row"></div>
+         </div>
+      <!--2ºPantalla-->
+      <div id="second-page">
+         <!--Select-->
+         <div id="container2" class="container">
+            <div class="row">
+               <div id="select-films" class="col s12 m4">
+                  <select id="select-type-films">
+                     <option value="">Elige tu género</option>
+                     <option value="28">Acción</option>
+                     <option value="12">Aventura</option>
+                     <option value="16">Animación</option>
+                     <option value="35">Comedia</option>
+                     <option value="80">Crimen</option>
+                     <option value="18">Drama</option>
+                     <option value="10751">Familia</option>
+                     <option value="14">Fantasia</option>
+                     <option value="36">Historia</option>
+                     <option value="27">Horror</option>
+                     <option value="10402">Música</option>
+                     <option value="9648">Misterio</option>
+                     <option value="10749">Romance</option>
+                     <option value="878">Ciencia Ficción</option>
+                     <option value="10770">P. televisión</option>
+                     <option value="53">Suspenso</option>
+                     <option value="37">Occidentales</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div id="root"></div>
+            </div>
+         </div>
+         <div id="modal-result" class="modal"> 
          </div>
       </div>
-   </div>
-
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="data.js"></script>
-   <script src="main.js"></script>
-   <!--<script>
-         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, options);
-           }); 
-        </script>-->
-
-</body>
-</body>
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+   </body>
 </html>
