@@ -94,6 +94,12 @@ height: auto;
     z-index: 1;
     color: #ffff;
 }
+.img-modal{
+    height: 300px;
+    width: auto;
+    display:block;
+    margin:auto;
+ }
 
 .material-icons{
     font-size: 60px;
